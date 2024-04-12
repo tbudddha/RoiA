@@ -1,5 +1,4 @@
 //FINAL SCRIPT AUTODETECTION IMAGEJ:
-///Users/tejar/Downloads/results automation imagej.xlsx
 //These first commands initialize the GUI to input image/channel information
 #@ String (label="Excel File Path", description="results excel file path") PATH
 #@ String (label="Channel #1 Name", description="channel 1 name") chan1
@@ -14,7 +13,7 @@
 #@ Integer (label="Channel #2 Contrast/Threshold Maximum") chan2Max
 #@ Integer (label="Channel #3 Contrast/Threshold Maximum") chan3Max
 	
-#@ Integer (label="ROI banding value", value=135) bandVal
+#@ Integer (label="ROI banding value", value=999) bandVal
 
 close("*") //closes all existing image windows
 input = getDirectory("Choose an input directory"); //opens desktop and prompts user to select an input directory for images to be analyzed
